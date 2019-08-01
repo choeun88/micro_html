@@ -7,51 +7,241 @@
 	<body>
 		<div class="left-sidebar">
 			<div class="sub-logo">
-				<img src="https://app.banhji.com/c2/assets/update/banhji-blank.png" />
+				<a href="#">
+						<img src="https://app.banhji.com/c2/assets/update/banhji-blank.png" />
+					<div id="close"> 
+						<a href="#"><img src="images/close.jpg"/> 
+						<i class="fas fa-times"></i>
+					</div>
+				</a>
 			</div>
-			<h1>Hello world</h1>
+		       <ul>
+					<li> 
+						<a> Dashboard </a>
+					</li>
+					<li class="dropdown">
+						<a href=""> 
+							<span> Sale</span>
+						</a>
+							<div class="dropdown-content waves-effect">
+								<a href="">Pos</a>
+							</div>					
+					</li>
+					<li class="dropdown">
+						<a href="">
+							<span>Operation </span>
+
+						</a>
+						<div class="dropdown-content waves-effect">
+								<a href="cash/index.html">
+									<p>Cash </p>
+								</a>
+								<a href="">
+									<p>Purchase</p>
+								</a>
+								<a href="">
+									<p>Productions </p>
+								</a>
+								<a href="">
+									<p>Rice Mill</p>
+								</a>
+								<a href="">
+									<p>Recipe</p>
+								</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="">Contact</a>
+						<div class="dropdown-content waves-effect">
+								<a href="">Customer</a>
+								<a href="">
+									<p>Supplier</p>
+								</a>
+								<a href="">Employees</a>
+						</div>
+					</li>
+					<li class="li-underline">
+						<a href="https://app.banhji.com/c2/micro/items">Items </a>
+					</li>
+					<li>
+						<a href="https://app.banhji.com/c2/micro/reports">Reports </a>
+					</li>
+					<li class="li-underline dropdown">
+						<a> 
+							<span>Setting </span>
+						 </a>
+						 <div class="dropdown-content waves-effect">
+						 	<a href="">
+							 	<p>System Setting</p>
+							</a>
+							<a href="">
+							 	<p>Customer Setting</p>
+							</a>
+							<a href="">
+							 	<p>Purchase Setting</p>
+							</a>
+							<a href="">
+							 	<p>Item Setting</p>
+							</a>
+							<a href="">
+							 	<p>Employee Setting</p>
+							 </a>
+						 </div>
+					</li>
+					<li>
+						<a> MORE FROM BANHJI </a>
+					</li>
+				</ul>
+	</div>
+		<div class="top fixed-top">
+			<div class="right-sidebar-two">
+				<div>
+					<div class="sub-logo-b">
+						<a href="#">
+							<img class="zoom" src="images/icon.png"/>
+						</a>
+						<a href="#">
+							<img class="zoom" src="images/chat.png"/>
+						</a>
+						<a href="#">
+							<img class="zoom" src="images/menu.png"/>
+						</a>						
+						<a href="#">
+							<img class="zoom" src="images/fullscreen.png"/>
+						</a>			
+					</div>
+				</div>
+			</div>
+				<div class="right-sidebar">
+					<div class="logo">
+						<b>
+							<img class="small-logo" src="images/banhji.jpg"/>
+						</b>
+						<span> 
+							<img class="big-logo" src="images/micro.png"/>
+						</span>
+					</div>	
+				</div>
+		</div>		
+
+		<div class="content"> 
+			<div class="row">
+				<div class="wrapper">	
+					<div class="nav-content board-chart">
+						<img class="function" src="images/default_logo.png"/>                  
+					</div>
+				</div>
+			<div class="wrapper">
+				<div class="nav-content-bar">
+					<a href="">
+						<img class="function" src="images/cash.png"/>
+	                    <p data-bind="text: lang.lang.check_out">Cash</p>
+	                </a>
+				</div>
+				<div class="nav-content-bar">
+					<a href="">
+						<img class="function" src="images/Inventory.png"/>
+	                    <p data-bind="text: lang.lang.check_out">Items</p>
+	                </a>
+				</div>
+				<div class="nav-content-bar">
+					<a href="">
+						<img class="function" src="images/sale.png"/>
+	                    <p data-bind="text: lang.lang.check_out">Purchase</p>
+	                </a>
+				</div>				
+				<div class="nav-content-bar">
+					<a href="">
+						<img class="function" src="images/sale.png">
+	                    <p data-bind="text: lang.lang.check_out">Check Out</p> 
+	                </a>
+                </div>
+            </div>
+          </div>
+			
+			<div class="row">
+				<div class="card">
+					<div class="card-c">
+						<h2> Receivable </h2>
+							<div class="col">
+								<span data-bind="text: obj.receivable_customer">2</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.open">Open</span>
+							</div>
+							<div class="col">
+								<span data-bind="text: obj.receivable_overdue">10</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.overdue">Overdue</span>
+							</div>
+					</div>
+					<div class="card-b">
+						<h2> Sale </h2>
+						<p>534859355</p>
+							<div class="col">
+								<span data-bind="text: obj.sale_customer">2</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.customer">Customer</span>
+							</div>
+							<div class="col">
+								<span data-bind="text: obj.sale_product">10</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.product">Product</span>
+							</div>
+
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="card-a">
+						<h2> Payables</h2>
+							<div class="col">
+								<span data-bind="text: obj.payables_open">2</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.open">Open</span>
+							</div>
+							<div class="col">
+								<span data-bind="text: obj.payables_open">10</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.open">Open</span>
+							</div>
+					</div>
+					<div class="card-a">
+						<h2> Purchase</h2>
+							<div class="col">
+								<span data-bind="text: obj.purchase_supplier">2</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.supplier">Supplier</span>
+							</div>
+							<div class="col">
+								<span data-bind="text: obj.purchase_product">10</span>
+								<br>
+								<span data-bind="text: lang.leng.lang.product">Product</span>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="card-big">
+					<div class="card-d">
+						<h2>Cash In</h2>
+					</div>
+					<div class="card-d">
+						<h2>Cash Out</h2>
+					</div>
+					<div class="card-d">
+						<h2>Cash Balance</h2>
+					</div>
+
+				</div>
+			</div>
+
+				<footer class="footer">  
+             		 © 2019 BanhJi PTE. Ltd. All rights reserved.     
+				</footer>
 		</div>
+		
+			
+        
 	</body>
 </html>
 
-<!-- <style type="text/css">
-	
-</style> -->
-<!-- <p>
-	alksdjf;laksjdf;lkasjdfl; -<br />
-	as;lkdfjas;lkdfjdls;
-</p>
-<pre >
-	;laskjdf;lkasjdf;aksdf;asjkfd -
-	al;skdfj;alsdkjf;aslkdfj;sdklf 
-</pre>
-<span></span> -->
-<!--
-1em
-1%
-1px
-
-position:
-ralative,
-fixed,
-absolute,
-
-<div>
-<img src="----" />
-<div>
-	<table>
-		<td>
-
-		</td>
-		<div></div>2
-	</table>
-</div>
-
-<ul>
-	<li>
-		<a>
-			Dashboard
-		</a>
-	</li>
-</ul>
--->
